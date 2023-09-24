@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="principal">#316896</color>
+    <color name="principal_75">#648EB0</color>
+    <color name="principal_50">#98B3CA</color>
+    <color name="principal_25">#CBD9E5</color>
     <color name="black">#FF000000</color>
+    <color name="black_75">#404040</color>
+    <color name="black_50">#808080</color>
+    <color name="black_25">#BFBFBF</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="green_success">#08A90E</color>
+    <color name="red_error">#D62A20</color>
+    <color name="main_text">#2B5E89</color>
+    <color name="subtitle">#438DCA</color>
 </resources>

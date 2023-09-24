@@ -6,13 +6,55 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="377sp"
+        android:layout_height="427sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.568"
+        app:srcCompat="@drawable/main_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenid@ a MedicAlarm"
+        android:textAlignment="center"
+        android:textColor="@color/main_text"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <Button
+        android:id="@+id/registrar"
+        android:layout_width="173sp"
+        android:layout_height="73sp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="@color/principal"
+        android:text="REGISTRAR"
+        android:textSize="20sp"
+        app:cornerRadius="10px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/ingresar"
+        android:layout_width="173sp"
+        android:layout_height="73sp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/principal"
+        android:text="INGRESAR"
+        android:textSize="20sp"
+        app:cornerRadius="10px"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="678dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
