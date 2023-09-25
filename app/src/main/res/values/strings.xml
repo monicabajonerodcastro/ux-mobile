@@ -10,6 +10,10 @@
     <string name="bienvenida_a_medicalarm_title">Bienvenid@ a MedicAlarm</string>
     <string name="registrar_title">REGISTRAR</string>
     <string name="ingresar_title">INGRESAR</string>
+    <string name="olvidar_contrasena_label"><u>Olvidé mi contraseña</u></string>
+    <string name="no_tiene_cuenta_label">¿No tienes una cuenta?\u00A0</string>
+    <string name="crear_cuenta_aqui_label"><u>Créala aquí</u></string>
+
     <string-array name="genero_array">
         <item>Femenino</item>
         <item>Masculino</item>
