@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">MedicAlarm</string>
+    <string name="registrarse_title">REGISTRARSE</string>
+    <string name="nombre_label">Nombre</string>
+    <string name="edad_label">Edad</string>
+    <string name="genero_label">Género</string>
+    <string name="correo_electronico_label">Correo electrónico</string>
+    <string name="contrasena_label">Contraseña</string>
+    <string name="confirmacion_de_contrasena_label">Confirmación de contraseña</string>
+    <string name="bienvenida_a_medicalarm_title">Bienvenid@ a MedicAlarm</string>
+    <string name="registrar_title">REGISTRAR</string>
+    <string name="ingresar_title">INGRESAR</string>
+    <string-array name="genero_array">
+        <item>Femenino</item>
+        <item>Masculino</item>
+        <item>Otro</item>
+    </string-array>
 </resources>
