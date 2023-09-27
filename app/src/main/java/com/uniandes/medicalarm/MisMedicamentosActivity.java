@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Spinner;
 
 public class MisMedicamentosActivity extends AppCompatActivity {
@@ -17,11 +18,21 @@ public class MisMedicamentosActivity extends AppCompatActivity {
     ImageButton itemUno;
     ImageButton itemDos;
 
+    ImageView atrasImageView;
+
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mis_medicamentos);
+
+        atrasImageView = findViewById(R.id.imageButton4);
+        atrasImageView.setOnClickListener(
+                view -> {
+                    Intent intent = new Intent(MisMedicamentosActivity.this, MainActivity.class);
+                    startActivity(intent);
+                }
+        );
 
         agregar = findViewById(R.id.imageButton6);
         agregar.setOnClickListener(

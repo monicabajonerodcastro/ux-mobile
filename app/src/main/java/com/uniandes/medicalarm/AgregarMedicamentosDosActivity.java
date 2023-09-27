@@ -15,6 +15,7 @@ public class AgregarMedicamentosDosActivity extends AppCompatActivity {
 
     ImageButton getback;
     TextView retorno;
+    Button guardar;
 
     EditText mensaje;
 
@@ -42,6 +43,14 @@ public class AgregarMedicamentosDosActivity extends AppCompatActivity {
                         Intent i = new Intent(AgregarMedicamentosDosActivity.this, AgregarMedicamentosActivity.class);
                         startActivity(i);
                     }
+                }
+        );
+
+        guardar = findViewById(R.id.ingresar3);
+        guardar.setOnClickListener(
+                v -> {
+                    Intent i = new Intent(AgregarMedicamentosDosActivity.this, MisMedicamentosActivity.class);
+                    startActivity(i);
                 }
         );
 

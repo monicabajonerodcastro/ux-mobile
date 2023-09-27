@@ -37,8 +37,7 @@ public class IngresarActivity extends AppCompatActivity {
         ingresarButton.setOnClickListener(
                 view -> {
                     if (isValidForm()){
-                        //TODO Cambiar direccionamiento a pantalla principal de medicamentos
-                        Intent intent = new Intent(IngresarActivity.this, MainActivity.class);
+                        Intent intent = new Intent(IngresarActivity.this, MisMedicamentosActivity.class);
                         startActivity(intent);
                     }
                 }

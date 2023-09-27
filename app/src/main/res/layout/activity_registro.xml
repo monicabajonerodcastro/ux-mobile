@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:showDividers="middle"
     android:divider="@drawable/empty_tall_divider">
     <LinearLayout
         android:layout_width="wrap_content"
@@ -30,13 +29,25 @@
             android:textStyle="bold" />
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/nombre_text"
+        android:layout_width="353dp"
+        android:layout_height="38dp"
+        android:background="@drawable/custom_input"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto"
+        android:text="@string/nombre_label"
+        android:textAllCaps="false"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_input" />
 
     <EditText
         android:id="@+id/nombre_input"
+        style="@style/spinner_style"
         android:layout_width="353dp"
         android:layout_height="60dp"
         android:ems="10"
-        android:hint="@string/nombre_label"
         android:inputType="text"
         android:textColor="@color/principal" />
 
@@ -44,49 +55,118 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <EditText
-            android:id="@+id/edad_input"
-            android:layout_width="170dp"
-            android:layout_height="65dp"
-            android:ems="10"
-            android:hint="@string/edad_label"
-            android:inputType="number"
-            android:textColor="@color/principal"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/edad_text"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/custom_input"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/roboto"
+                android:text="@string/edad_label"
+                android:textAllCaps="false"
+                android:textColor="@color/principal"
+                android:textSize="21sp"
+                app:layout_constraintTop_toBottomOf="@+id/edad_input" />
 
-        <Spinner
+            <EditText
+                android:id="@+id/edad_input"
+                style="@style/spinner_style"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="@color/principal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/genero_text"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/custom_input"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/roboto"
+                android:text="@string/genero_label"
+                android:textAllCaps="false"
+                android:textColor="@color/principal"
+                android:textSize="21sp"
+                app:layout_constraintTop_toBottomOf="@+id/genero_spinner" />
+
+            <Spinner
             android:id="@+id/genero_spinner"
+            android:theme="@style/mySpinnerItemStyle"
             android:layout_width="170dp"
             android:layout_height="60dp"
             android:prompt="@string/genero_label"
             android:spinnerMode="dialog"
             android:textColor="@color/principal"/>
-
+        </LinearLayout>
     </LinearLayout>
-
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="350dp"
+        android:layout_height="38dp"
+        android:background="@drawable/custom_input"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto"
+        android:text="@string/genero_label"
+        android:textAllCaps="false"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        app:layout_constraintTop_toBottomOf="@+id/email_input" />
     <EditText
         android:id="@+id/email_input"
+        style="@style/spinner_style"
         android:layout_width="350dp"
-        android:layout_height="64dp"
+        android:layout_height="60dp"
         android:ems="10"
-        android:hint="@string/correo_electronico_label"
         android:inputType="textEmailAddress"
         android:textColor="@color/principal" />
-
+    <TextView
+        android:id="@+id/contrasena_text"
+        android:layout_width="350dp"
+        android:layout_height="38dp"
+        android:background="@drawable/custom_input"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto"
+        android:text="@string/contrasena_label"
+        android:textAllCaps="false"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        app:layout_constraintTop_toBottomOf="@+id/contrasena_input" />
     <EditText
         android:id="@+id/contrasena_input"
+        style="@style/spinner_style"
         android:layout_width="353dp"
-        android:layout_height="65dp"
+        android:layout_height="60dp"
         android:ems="10"
-        android:hint="@string/contrasena_label"
         android:inputType="textPassword"
         android:textColor="@color/principal" />
-
+    <TextView
+        android:id="@+id/contrasena_confirmacion_text"
+        android:layout_width="350dp"
+        android:layout_height="38dp"
+        android:background="@drawable/custom_input"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto"
+        android:text="@string/confirmacion_de_contrasena_label"
+        android:textAllCaps="false"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        app:layout_constraintTop_toBottomOf="@+id/contrasena_confirmacion_input" />
     <EditText
         android:id="@+id/contrasena_confirmacion_input"
+        style="@style/spinner_style"
         android:layout_width="353dp"
-        android:layout_height="65dp"
+        android:layout_height="60dp"
         android:ems="10"
-        android:hint="@string/confirmacion_de_contrasena_label"
         android:inputType="textPassword"
         android:textColor="@color/principal" />
 
