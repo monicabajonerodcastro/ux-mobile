@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MedicAlarm</string>
+    <string name="mis_medicamentos">Mis Medicamentos</string>
+    <string name="regresar"><u>Regresar</u></string>
 </resources>

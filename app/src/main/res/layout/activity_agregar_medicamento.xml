@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarMedicamentosActivity">
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="114dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/box"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="114dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/box"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="121dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/box"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="93dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/principal_25"
+        android:backgroundTint="@color/principal_25"
+        android:fontFamily="@font/roboto"
+        android:text="09:00pm"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="93dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/principal_25"
+        android:backgroundTint="@color/principal_25"
+        android:fontFamily="@font/roboto"
+        android:text="01:00pm"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="93dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/principal_25"
+        android:backgroundTint="@color/principal_25"
+        android:fontFamily="@font/roboto"
+        android:text="03:00pm"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+    <EditText
+        android:id="@+id/editTextText6"
+        style="@style/spinner_style"
+        android:layout_width="110dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/roboto"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/principal"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+    <EditText
+        android:id="@+id/editTextText5"
+        style="@style/spinner_style"
+        android:layout_width="110dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/principal"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView31"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText6" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="93dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/principal_25"
+        android:backgroundTint="@color/principal_25"
+        android:fontFamily="@font/roboto"
+        android:text="07:00am"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        style="@style/spinner_style"
+        android:layout_width="110dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintStart_toEndOf="@+id/textView34"
+        app:layout_constraintTop_toBottomOf="@+id/textView37">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:entries="@array/combo_horas"
+            android:spinnerMode="dropdown"
+            android:theme="@style/mySpinnerItemStyle2"></Spinner>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="93dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/principal_25"
+        android:backgroundTint="@color/principal_25"
+        android:fontFamily="@font/roboto"
+        android:text="05:00am"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="93dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/principal_25"
+        android:backgroundTint="@color/principal_25"
+        android:fontFamily="@font/roboto"
+        android:text="11:00pm"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="204dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_input"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto"
+        android:text="Nombre:"
+        android:textAllCaps="false"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="205dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="236dp"
+        android:background="@drawable/custom_input"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto"
+        android:text="Alarma:"
+        android:textAllCaps="false"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="155dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="272dp"
+        android:background="@drawable/custom_input"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto"
+        android:text="Sugerencias"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="110dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="272dp"
+        android:background="@drawable/custom_input"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto"
+        android:text="Otro"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        style="@style/spinner_style"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/roboto"
+        android:inputType="text"
+        android:paddingLeft="17sp"
+        android:textColor="@color/principal_50"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        style="@style/spinner_style"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:theme="@style/mySpinnerItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:entries="@array/combo_frecuencia_admin"
+            android:spinnerMode="dropdown"></Spinner>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="288dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_input"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto"
+        android:text="Frecuencia de administración:"
+        android:textAllCaps="false"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+    <Button
+        android:id="@+id/ingresar2"
+        android:layout_width="336dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/principal"
+        android:text="CONTINUAR"
+        android:textSize="20sp"
+        app:cornerRadius="10px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="Agregar medicamento"
+        android:textAlignment="center"
+        android:textColor="@color/main_text"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="44dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="back"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571"
+        app:srcCompat="@drawable/left_arrow_6404"
+        app:tint="@color/principal" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

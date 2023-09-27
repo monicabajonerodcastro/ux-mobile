@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MisMedicamentosActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="58dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="268dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:srcCompat="@drawable/delete_10400"
+        app:tint="@color/principal" />
+
+    <ImageButton
+        android:id="@+id/imageButton15"
+        android:layout_width="58dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="268dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:srcCompat="@drawable/delete_10400"
+        app:tint="@color/principal" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="64dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:srcCompat="@drawable/editar"
+        app:tint="@color/principal" />
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="64dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="7dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:srcCompat="@drawable/editar"
+        app:tint="@color/principal" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="71dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="268dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/roboto"
+        android:text="Eliminar"
+        android:textColor="@color/principal_50"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton10" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="55dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/roboto"
+        android:text="Editar"
+        android:textColor="@color/principal_50"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton9" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="55dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/roboto"
+        android:text="Editar"
+        android:textColor="@color/principal_50"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton14" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="71dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="268dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/roboto"
+        android:text="Eliminar"
+        android:textColor="@color/principal_50"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton15" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="177dp"
+        android:layout_height="24dp"
+        android:text="Levotiroxina"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="177dp"
+        android:layout_height="24dp"
+        android:text="Acetaminofén"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="163dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="500gr c/12 horas"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="163dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="200gr c/8 horas"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/mis_medicamentos"
+        android:textColor="@color/main_text"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="103dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="44dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="44dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="back"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571"
+        app:srcCompat="@drawable/left_arrow_6404"
+        app:tint="@color/principal" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="compartir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:srcCompat="@drawable/icons8_share__2_"
+        app:tint="@color/principal" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="Compartir"
+        android:textColor="@color/principal_50"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton7"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="63dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="agregar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline10"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:srcCompat="@drawable/black_add_button_12020"
+        app:tint="@color/principal" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="Agregar"
+        android:textColor="@color/principal_50"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline10"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton6"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="208dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="303dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="400dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
