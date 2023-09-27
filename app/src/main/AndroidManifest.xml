@@ -23,10 +23,27 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MisMedicamentosActivity"
+            android:exported="false"
+            android:label="Mis medicamentos">
+        </activity>
+        <activity
+            android:name=".AgregarMedicamentosActivity"
+            android:exported="false"
+            android:label="Agregar medicamentos">
+        </activity>
+        <activity
+            android:name=".AgregarMedicamentosDosActivity"
+            android:exported="false"
+            android:label="Agregar medicamentos 2">
+        </activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

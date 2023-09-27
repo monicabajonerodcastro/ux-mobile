@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">MedicAlarm</string>
+    <string name="mis_medicamentos">Mis Medicamentos</string>
+    <string name="regresar"><u>Regresar</u></string>
     <string name="registrarse_title">REGISTRARSE</string>
     <string name="nombre_label">Nombre</string>
     <string name="edad_label">Edad</string>
@@ -13,7 +15,6 @@
     <string name="olvidar_contrasena_label"><u>Olvidé mi contraseña</u></string>
     <string name="no_tiene_cuenta_label">¿No tienes una cuenta?\u00A0</string>
     <string name="crear_cuenta_aqui_label"><u>Créala aquí</u></string>
-
     <string-array name="genero_array">
         <item>Femenino</item>
         <item>Masculino</item>

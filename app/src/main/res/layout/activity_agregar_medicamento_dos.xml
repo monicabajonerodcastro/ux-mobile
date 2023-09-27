@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF">
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="53dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/left_arrow_6404"
+        app:tint="@color/principal" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="Agregar medicamento"
+        android:textAlignment="center"
+        android:textColor="@color/main_text"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ingresar3"
+        android:layout_width="336dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="356dp"
+        android:backgroundTint="@color/principal"
+        android:text="GUARDAR"
+        android:textSize="20sp"
+        app:cornerRadius="10px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="284dp"
+        android:fontFamily="@font/roboto"
+        android:text="Posponer:"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        android:thumbTint="@color/principal"
+        android:trackTint="@color/principal_75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/regresar"
+        android:textAllCaps="false"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingresar3" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="284dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/roboto"
+        android:text="minutos"
+        android:textAllCaps="false"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="204dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_input"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto"
+        android:text="Tono de alarma:"
+        android:textAllCaps="false"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="204dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="152dp"
+        android:background="@drawable/custom_input"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto"
+        android:text="Mensaje:"
+        android:textAllCaps="false"
+        android:textColor="@color/principal"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        style="@style/spinner_style"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:theme="@style/mySpinnerItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:entries="@array/combo_tono_alarma"
+            android:spinnerMode="dropdown"></Spinner>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextText2"
+        style="@style/spinner_style"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/roboto"
+        android:inputType="text"
+        android:paddingLeft="17sp"
+        android:text="Tomar medicamento..."
+        android:textColor="@color/principal_50"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        style="@style/spinner_style"
+        android:layout_width="87dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/roboto"
+        android:inputType="number"
+        android:text="5"
+        android:textAlignment="center"
+        android:textColor="@color/principal"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView22"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toEndOf="@+id/switch2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="combo_frecuencia_admin">
+        <item>200gr c/8 horas</item>
+        <item>500gr c/12 horas</item>
+        <item>2mg c/6 horas</item>
+        <item>5mg c/24 horas</item>
+    </string-array>
+</resources>
