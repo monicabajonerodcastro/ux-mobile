@@ -13,13 +13,23 @@
         android:theme="@style/Theme.MedicAlarm"
         tools:targetApi="31">
         <activity
-            android:name=".MisMedicamentosActivity"
+            android:name=".IngresarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MisMedicamentosActivity"
+            android:exported="false"
+            android:label="Mis medicamentos">
         </activity>
         <activity
             android:name=".AgregarMedicamentosActivity"
